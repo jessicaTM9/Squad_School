@@ -1,0 +1,47 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    text-align: center;
+  }
+  .topo {
+    position: relative;
+    padding: 1rem;
+   
+  }
+  
+  .img {
+    width: 840px;
+    top: 100px;
+    right: 153px;
+  }
+  
+  .titulo-principal,
+  p {
+    font-size: "Open Sans Condensed", "Arial", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+    color: cadetblue;
+  }
+  section{
+      div{
+      display: contents;
+      a{
+        text-decoration:none;
+        text-decoration: none;
+        width: 100px;
+        background: cadetblue;
+        font-weight: bold;
+        color: #080101;
+        border: 0 none;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 5px 53px;
+        margin: 5px 5px;
+        
+      }
+      }
+  }

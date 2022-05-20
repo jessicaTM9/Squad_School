@@ -1,0 +1,8 @@
+
+<form [formGroup]="courseForm" (ngSubmit)="salvar()">
+    <label for="descricao">Descrição</label>
+    <input formControlName="descricao" name="descricao" type="text">
+    <label for="ementa">Ementa</label>
+    <textarea formControlName="ementa" name="ementa" rows="5"></textarea>
+    <button class="btn" type="submit">Salvar</button>
+</form>

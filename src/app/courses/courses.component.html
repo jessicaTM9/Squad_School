@@ -1,0 +1,29 @@
+
+<table>
+    <thead>
+        
+        <tr>
+            <th>Código</th>
+            <th>Descrição</th>
+            <th>Ementa</th>
+            <th>
+<button class="btn" [routerLink]="['add']" routerLinkActive="router-link-active" >Adicionar</button>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td>{{course.codigo}}</td>
+            <td>{{course.descricao}}</td>
+            <td>{{course.ementa}}</td>
+            <td>
+                <button class="btn" (click)="remover(course.codigo)">Remover</button>
+
+                <button class="btn" [routerLink]="[course.codigo]" routerLinkActive="router-link-active" >Editar</button>
+
+            </td>
+
+        </tr>
+    </tbody>
+</table>

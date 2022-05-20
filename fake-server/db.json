@@ -1,0 +1,46 @@
+{
+  "courses": [
+    {
+      "id": 2,
+      "codigo": 2,
+      "descricao": "Curso Angular",
+      "ementa": "Médio"
+    },
+    {
+      "id": 3,
+      "codigo": 3,
+      "descricao": "Curso NodeJS",
+      "ementa": "Avançado"
+    },
+    {
+      "descricao": "culinaria",
+      "ementa": " doces",
+      "id": 4
+    },
+    {
+      "descricao": "SQL",
+      "ementa": " back end",
+      "id": 6
+    }
+  ],
+  "students": [
+    {
+      "curso": "SQL",
+      "nome": "Harry Styles",
+      "id": 1,
+      "codigo": 1
+    },
+    {
+      "curso": "JavaScript",
+      "nome": "Dua Lipa",
+      "id": 2,
+      "codigo": 2
+    },
+    {
+      "curso": "Nodejs",
+      "nome": "Taylor Swift",
+      "id": 3,
+      "codigo": 3
+    }
+  ]
+}

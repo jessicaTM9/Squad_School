@@ -1,0 +1,28 @@
+
+<table>
+    <thead>
+        
+        <tr>
+            <th>Código</th>
+            <!-- <th>Curso</th> -->
+            <th>Nome</th>
+            <th>
+<button class="btn" [routerLink]="['add']" routerLinkActive="router-link-active" >Adicionar</button>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <td>{{student.codigo}}</td>
+            <!-- <td>{{student.curso}}</td> -->
+            <td>{{student.nome}}</td>
+            <td>
+                <button class="btn" (click)="remover(student.codigo)">Remover</button>
+                
+                <button class="btn" [routerLink]="[student.codigo]" routerLinkActive="router-link-active" >Editar</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
