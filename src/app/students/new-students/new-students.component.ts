@@ -24,3 +24,4 @@ export class NewStudentsComponent implements OnInit {
     this.studentsService.add(student.nome).subscribe(()=>this.router.navigate(['.', 'students']))
   }
 }
+

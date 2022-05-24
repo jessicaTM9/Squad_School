@@ -20,10 +20,9 @@ export class CoursesService {
     return this.http.post("http://localhost:3000/cursos",{descricao,ementa})
 
   }
-  edit(codigo: number, nome: string){
-    console.log(nome);
+  edit(codigo: number, descricao: string, ementa:string){
     
-    return this.http.put("http://localhost:3000/cursos/"+codigo,{nome})
+    return this.http.put("http://localhost:3000/cursos/"+codigo,{descricao, ementa})
 
   }
 

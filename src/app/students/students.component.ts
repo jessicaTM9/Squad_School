@@ -21,10 +21,10 @@ remover(codigo: number){
   this.studentsService.deleteByCodigo(codigo).subscribe(
     ()=>{
 //pra uma aplicação grande pode ficar pesado fazer requisição pro back
-     const novaListaStudantes= this.students.filter(
+     const novaListaStudants= this.students.filter(
         (estudante)=>estudante.codigo != codigo
       )
-       this.students = novaListaStudantes
+       this.students = novaListaStudants
     }
   )
 }

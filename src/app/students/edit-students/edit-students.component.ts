@@ -17,9 +17,9 @@ studentForm! : FormGroup
     private studentsService: StudentsService,
     private router: Router
   ){ }
-
+ 
   ngOnInit(): void {
-    const codigo = this.activatedRoute.snapshot.params['codigo']
+     const codigo = this.activatedRoute.snapshot.params['codigo']
     this.studentForm = this.formBuilder.group({
       nome: [''], 
       codigo: [codigo]     

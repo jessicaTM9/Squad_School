@@ -24,7 +24,8 @@ export class EditCoursesComponent implements OnInit {
     })
 
     this.coursesService.getByCodigo(codigo).subscribe((cursos)=> {
-      this.coursesForm.get('descricao', 'ementa')?.setValue(cursos.codigo,cursos.descricao, cursos.ementa)
+      this.coursesForm.get('descricao')?.setValue(cursos.descricao)
+      this.coursesForm.get('ementa')?.setValue(cursos.ementa)
     })
   }
   salvar(){
