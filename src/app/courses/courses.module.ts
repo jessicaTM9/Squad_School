@@ -5,13 +5,15 @@ import { CommonModule } from '@angular/common';
 import { CoursesComponent } from './courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewCoursesComponent } from './new-courses/new-courses.component';
+import { EditCoursesComponent } from './edit-courses/edit-courses.component';
 
 
 
 @NgModule({
   declarations: [
     CoursesComponent,
-    NewCoursesComponent
+    NewCoursesComponent,
+    EditCoursesComponent
   ],
   imports: [
     CommonModule,

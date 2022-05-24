@@ -21,6 +21,6 @@ export class NewStudentsComponent implements OnInit {
   }
   salvar(){
     const student = this.studentForm.getRawValue()//pega todo valor do form 
-    this.studentsService.add(student.name).subscribe(()=>this.router.navigate(['.', 'students']))
+    this.studentsService.add(student.nome).subscribe(()=>this.router.navigate(['.', 'students']))
   }
 }

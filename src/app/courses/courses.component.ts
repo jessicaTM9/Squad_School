@@ -23,7 +23,7 @@ export class CoursesComponent implements OnInit {
       ()=>{
   //pra uma aplicação grande pode ficar pesado fazer requisição pro back
        const novaListaStudantes= this.courses.filter(
-          (estudante)=>estudante.codigo != codigo
+          (cursos)=>cursos.codigo != codigo
         )
          this.courses = novaListaStudantes
       }

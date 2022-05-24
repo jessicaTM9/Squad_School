@@ -13,25 +13,25 @@ export class CoursesService {
   }
 
   list(): Observable<ICourse[]> { //esse list retorna o tipo observable, dentro dele retorna o array.
-    return this.http.get<ICourse[]>("http://localhost:3000/courses")    
+    return this.http.get<ICourse[]>("http://localhost:3000/cursos")    
   }
 
   add(descricao: string, ementa: string){
-    return this.http.post("http://localhost:3000/courses",{descricao,ementa})
+    return this.http.post("http://localhost:3000/cursos",{descricao,ementa})
 
   }
   edit(codigo: number, nome: string){
     console.log(nome);
     
-    return this.http.put("http://localhost:3000/courses/"+codigo,{nome})
+    return this.http.put("http://localhost:3000/cursos/"+codigo,{nome})
 
   }
 
   getByCodigo(codigo: number): Observable<ICourse> { //esse list retorna o tipo observable, dentro dele retorna o array.
-    return this.http.get<ICourse>("http://localhost:3000/courses/"+codigo)
+    return this.http.get<ICourse>("http://localhost:3000/cursos/"+codigo)
   }
   deleteByCodigo(codigo: number) { //esse list retorna o tipo observable, dentro dele retorna o array.
-    return this.http.delete("http://localhost:3000/courses/"+codigo)
+    return this.http.delete("http://localhost:3000/cursos/"+codigo)
   }
 
 }
